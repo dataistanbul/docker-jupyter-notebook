@@ -21,6 +21,7 @@ RUN REPO=http://cdn-fastly.deb.debian.org \
     ca-certificates \
     sudo \
     locales \
+    fonts-liberation \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 
@@ -106,6 +107,7 @@ RUN apt-get update && apt-get install -yq --no-install-recommends \
     lmodern \
     libxrender1 \
     inkscape \
+    ssh \
     && apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
